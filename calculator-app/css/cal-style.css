@@ -1,0 +1,88 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+  
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+.cal-container{
+    margin-top: 20px;
+    height: auto;
+    width: 300px;
+    background-color: rgb(246, 242, 242);
+    margin-left: auto;
+    margin-right: auto;
+    font-family: open sans;
+}
+.cal-title{
+    height: 50px;
+    background-color: rgb(225, 170, 32);
+    color: white;
+    line-height: 50px;
+}
+.cal-title h1{
+    font-size: 26px;
+    font-family: roboto;
+    text-align: center;
+}
+.cal-result{
+    font-family: open sans;
+    font-size: 38px;
+    height: 70px;
+    width: auto;
+    color: white;
+    background-color: black;
+    line-height: 70px;
+    padding: 8px;
+    text-align: right;
+}
+
+/*buttons styles*/
+button{
+    height: 50px;
+    background-color: #fff;
+    background-color: rgb(255, 255, 255);
+    font-size: 26px;
+    color: #333;
+    border: none;
+}
+button:hover{
+    background-color: #f7f5f5;
+    cursor: pointer ;
+    border: none;
+}
+.operator{
+    color: rgb(50, 125, 157);
+}
+.all-clear{
+    background-color: #f0595f;
+    color: #fff;
+}
+.all-clear:hover{
+    background-color: #f17377;
+}
+.equal-sign{
+    background-color: #2e86c0;
+    border-color: #337cac;
+    color: #fff;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    height: auto;
+}
+.equal-sign:hover{
+    background-color: #4e9ed4;
+}
+
+/*Arranging calculator keys using grid layout*/
+.btns-container{
+    border: 1px solid rgb(230, 226, 226);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 2px;
+    grid-column-gap: 2px;
+}
