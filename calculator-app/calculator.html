@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cal-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freehand&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>Calculator App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freehand&family=Open+Sans&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="cal-container">
+        <!--Calculator title container-->
+        <div class="cal-title">
+            <h1>Calculator</h1>
+        </div>
+        <!--Calculator result container-->
+            <div class="cal-result">
+            </div>
+            <!--Calculator buttons container-->
+            <div class="btns-container">
+                <!--operators buttons-->
+                <button class="operator" value="+" onclick="performOperation(this)">+</button>
+                <button class="operator" value="-" onclick="performOperation(this)">-</button>
+                <button class="operator" value="*" onclick="performOperation(this)">*</button>
+                <button class="operator" value="/" onclick="performOperation(this)">/</button>
+
+                <!--numbers buttons-->
+                <button class="numbers" value="7" onclick="insertValue(7)">7</button>
+                <button class="numbers" value="8" onclick="insertValue(8)">8</button>
+                <button class="numbers" value="9" onclick="insertValue(9)">9</button>
+
+                <button class="numbers" value="4" onclick="insertValue(4)">4</button>
+                <button class="numbers" value="5" onclick="insertValue(5)">5</button>
+                <button class="numbers" value="6" onclick="insertValue(6)">6</button>
+
+                <button class="numbers" value="1" onclick="insertValue(1)">1</button>
+                <button class="numbers" value="2" onclick="insertValue(2)">2</button>
+                <button class="numbers" value="3" onclick="insertValue(3)">3</button>
+
+                <button class="numbers" value="0" onclick="insertValue(0)">0</button>
+                <button class="decimal" value=".">.</button>
+                <button class="all-clear" value="ac" onclick="allClear()">AC</button>
+
+                <button class="equal-sign" value="=" onclick="updateValue()">=</button>
+            </div>
+    </div>
+    <script type="text/javascript" src="js/calculator.js">
+    </script>
+</body>
+
+</html>
